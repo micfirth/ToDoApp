@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity"
+    android:background="@drawable/andbg">
+
+    <EditText
+        android:id="@+id/listName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:hint="Назва спісу"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="15dp"
+        android:textColor="#6a386b"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/infoString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listName"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="Прыкладанне для спісаў спраў"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/task_list"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/infoString"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:dividerHeight="2dp"
+        android:divider="@color/colorPrimary"/>
+</RelativeLayout>
